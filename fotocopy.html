@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Leny Copy Centre</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center p-6 border-b bg-white shadow-sm">
+    <div class="font-bold text-xl">
+      <img src="lgo fotokopi.jpeg" alt="Logo Leny Copy Centre" class="h-20 w-auto">
+    </div>
+    <nav class="hidden md:flex space-x-8 text-gray-700">
+      <a href="#home" class="hover:text-blue-600">HOME</a>
+      <a href="#tentang" class="hover:text-blue-600">TENTANG KAMI</a>
+      <a href="#layanan" class="hover:text-blue-600">LAYANAN</a>
+      <a href="#jam" class="hover:text-blue-600">JAM OPERASIONAL</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden border px-3 py-1 rounded">MENU</button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden flex-col items-center bg-white shadow-md p-4 md:hidden">
+    <a href="#home" class="py-2">HOME</a>
+    <a href="#tentang" class="py-2">TENTANG KAMI</a>
+    <a href="#layanan" class="py-2">LAYANAN</a>
+  </div>
+
+  <!-- Hero -->
+  <section id="home" class="text-center py-16 bg-white">
+    <h1 class="text-3xl md:text-4xl font-bold">LENY COPY CENTRE</h1>
+    <p class="text-gray-600 mt-2">Percetakan Cepat, Tepat, dan Berkualitas</p>
+  </section>
+  <img src="poster fotokopi.jpeg" alt="Poster Leny Copy Centre" 
+       class="mx-auto mb-6 rounded-lg shadow-lg w-full max-w-3xl">
+  <!-- Tentang Kami -->
+  <section id="tentang" class="text-center py-12 px-6 bg-gray-100">
+    <h2 class="text-2xl font-bold mb-2">TENTANG KAMI</h2>
+    <p class="max-w-2xl mx-auto text-gray-700">
+      Leny Copy Centre menyediakan layanan percetakan modern dengan hasil berkualitas tinggi. 
+      Kami berkomitmen untuk memberikan pelayanan terbaik dengan waktu pengerjaan cepat dan hasil maksimal.
+    </p>
+  </section>
+
+  <!-- Layanan -->
+<section id="layanan" class="text-center py-12 bg-gray-50">
+    <h2 class="text-2xl font-bold mb-2">MELAYANI DAN MENYEDIAKAN PERALATAN KANTOR</h2>
+    <h2 class="text-lg mb-6 text-gray-600">BERIKUT LAYANAN JASA YANG KAMI SEDIAKAN</h2>
+  
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto px-6">
+      <!-- PHOTOCOPY -->
+      <div class="bg-white border rounded-2xl p-4 shadow hover:shadow-lg transition">
+        <img src="fotokopi.png" alt="Photocopy" class="h-40 w-full object-cover rounded-lg mb-3">
+        <h3 class="text-lg font-semibold">PHOTOCOPY</h3>
+      </div>
+  
+      <!-- SCAN DOKUMEN -->
+      <div class="bg-white border rounded-2xl p-4 shadow hover:shadow-lg transition">
+        <img src="scandocument.jpg" alt="Scan Dokumen" class="h-40 w-full object-cover rounded-lg mb-3">
+        <h3 class="text-lg font-semibold">SCAN DOKUMEN</h3>
+      </div>
+  
+      <!-- LAMINATING -->
+      <div class="bg-white border rounded-2xl p-4 shadow hover:shadow-lg transition">
+        <img src="laminating.jpg" alt="Laminating" class="h-40 w-full object-cover rounded-lg mb-3">
+        <h3 class="text-lg font-semibold">LAMINATING</h3>
+      </div>
+  
+      <!-- PRINT -->
+      <div class="bg-white border rounded-2xl p-4 shadow hover:shadow-lg transition">
+        <img src="print.jpg" alt="Print" class="h-40 w-full object-cover rounded-lg mb-3">
+        <h3 class="text-lg font-semibold">PRINT</h3>
+      </div>
+  
+      <!-- BURNING CD -->
+      <div class="bg-white border rounded-2xl p-4 shadow hover:shadow-lg transition">
+        <img src="burncd.jpg" alt="Burning CD" class="h-40 w-full object-cover rounded-lg mb-3">
+        <h3 class="text-lg font-semibold">BURNING CD</h3>
+      </div>
+  
+      <!-- PENJILIDAN -->
+      <div class="bg-white border rounded-2xl p-4 shadow hover:shadow-lg transition">
+        <img src="penjilidan.jpg" alt="Penjilidan" class="h-40 w-full object-cover rounded-lg mb-3">
+        <h3 class="text-lg font-semibold">PENJILIDAN</h3>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Kontak Person -->
+  <section id="kontak" class="text-center py-12 bg-gray-100">
+    <h2 class="text-2xl font-bold mb-6">KONTAK PERSON</h2>
+    <div class="flex flex-col items-center space-y-4">
+      <!-- WhatsApp interactive button -->
+      <div class="flex items-center space-x-3">
+        <button id="whatsappBtn"
+                aria-label="Hubungi via WhatsApp +62 813-3350-4464"
+                class="flex items-center space-x-3 border px-4 py-2 rounded-lg shadow hover:shadow-lg transition">
+          <!-- WhatsApp Icon -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="text-green-600">
+            <path d="M.057 24l1.687-6.163a11.896 11.896 0 0 1-1.62-5.945C.124 5.305 5.48 0 12.04 0c3.2 0 6.203 1.245 8.457 3.498A11.832 11.832 0 0 1 24 11.999c0 6.558-5.355 11.914-11.944 11.999A11.88 11.88 0 0 1 .057 24z"/>
+          </svg>
+          <div class="text-left">
+            <div class="text-sm font-medium">WhatsApp Kami</div>
+          </div>
+        </button>
+      </div>
+
+      <!-- Instagram -->
+      <div class="flex items-center space-x-3">
+        <a href="https://www.instagram.com/lenicopycentre?igsh=cGtlcjltc3c1Mzhk" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="flex items-center space-x-2 hover:text-pink-600 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+            <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5zm0 1.5h8.5A4.25 4.25 0 0 1 20.5 7.75v8.5A4.25 4.25 0 0 1 16.25 20.5h-8.5A4.25 4.25 0 0 1 3.5 16.25v-8.5A4.25 4.25 0 0 1 7.75 3.5zm9.5 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-5.25 1.75A5.25 5.25 0 1 0 17.25 12 5.25 5.25 0 0 0 12 7.25zm0 1.5A3.75 3.75 0 1 1 8.25 12 3.75 3.75 0 0 1 12 8.75z"/>
+          </svg>
+          <span>Instagram Kami</span>
+        </a>
+      </div>
+
+      <!-- TikTok Button -->
+      <button id="tiktokBtn" 
+              class="flex items-center space-x-2 bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition shadow">
+        <!-- TikTok SVG Logo -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512" class="w-6 h-6 text-white">
+          <path d="M412.19 117.66a109.5 109.5 0 0 1-62.65-19.81v204.83a99.82 99.82 0 1 1-99.82-99.82 100.63 100.63 0 0 1 15.43 1.18v-70.66a171.38 171.38 0 0 0-15.43-.72 170.48 170.48 0 1 0 170.47 170.48V184.53a171.55 171.55 0 0 0 62.65 11.93v-77.63z"/>
+        </svg>
+        <span>TikTok Kami</span>
+      </button>
+    </div>
+  </section>
+
+<!-- Jam Operasional -->
+<section id="jam" class="text-center py-12 bg-white">
+    <h2 class="text-2xl font-bold mb-4">JAM OPERASIONAL</h2>
+    <div class="text-gray-700 space-y-2">
+      <p><strong>SENIN - JUMAT:</strong> 06.00 - 22.00</p>
+      <p><strong>SABTU:</strong> 06.00 - 20.00</p>
+      <p><strong>MINGGU:</strong> 06.00 - 22.00</p>
+    </div>
+  </section>
+
+  <!-- Google Maps -->
+  <section id="maps" class="text-center py-5">
+    <h2 class="text-2xl font-bold mb-4">GOOGLE MAPS</h2>
+    <div class="max-w-3xl mx-auto">
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.187235346937!2d108.20448207501874!3d-7.353783592662967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f57001d0b16d1%3A0xbb4d08ae50eb2774!2sLENI%20COPY%20CENTRE!5e0!3m2!1sid!2sid!4v1734459372000!5m2!1sid!2sid" 
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-white border-t text-gray-600">
+    © 2025 LENY COPY CENTRE
+  </footer>
+
+  <script>
+    // Toggle menu (mobile)
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // WhatsApp
+    const waBtn = document.getElementById('whatsappBtn');
+    waBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const phoneDigits = '6281333504464';
+      const text = encodeURIComponent('Halo Leny Copy Centre, saya ingin menanyakan layanan.');
+      const appUrl = `whatsapp://send?phone=${phoneDigits}&text=${text}`;
+      const webUrl = `https://wa.me/${phoneDigits}?text=${text}`;
+      const iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      iframe.src = appUrl;
+      document.body.appendChild(iframe);
+      setTimeout(() => {
+        document.body.removeChild(iframe);
+        window.open(webUrl, '_blank', 'noopener,noreferrer');
+      }, 1000);
+    });
+
+    // TikTok Button Behavior
+    const tiktokBtn = document.getElementById('tiktokBtn');
+    tiktokBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const tiktokURL = "https://www.tiktok.com/@leni_copy_centre.1?_t=ZS-90ctBPYOnJt&_r=1";
+      const appURL = "tiktok://www.tiktok.com/@leni_copy_centre.1"; // open in app
+      // Try open TikTok app first
+      const iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      iframe.src = appURL;
+      document.body.appendChild(iframe);
+      setTimeout(() => {
+        document.body.removeChild(iframe);
+        window.open(tiktokURL, '_blank', 'noopener,noreferrer');
+      }, 1000);
+    });
+  </script>
+
+</body>
+</html>
